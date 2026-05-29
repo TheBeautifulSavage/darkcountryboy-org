@@ -55,6 +55,29 @@ article h3{color:#d4b870;margin-top:1.5em}
 .tag{background:#2a2a2a;color:#c9a84c;padding:2px 8px;border-radius:3px;font-size:0.8em;margin-right:5px}
 </style>
 
+
+<style>
+/* Mobile overflow fix */
+*{box-sizing:border-box}
+html,body{overflow-x:hidden;max-width:100%}
+img{max-width:100%;height:auto}
+nav{overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+.container{padding:20px;width:100%;max-width:1100px}
+.track-grid,.album-grid{grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr))}
+.song-links{flex-wrap:wrap;gap:4px}
+.btn-stream{font-size:0.85em;padding:8px 14px;margin:4px}
+table{width:100%;table-layout:fixed;word-wrap:break-word}
+td,th{word-break:break-word}
+iframe{max-width:100%}
+@media(max-width:600px){
+  .hero h1{font-size:1.8em}
+  nav a{margin-right:12px;font-size:0.85em}
+  .track-grid,.album-grid{grid-template-columns:1fr}
+  .container{padding:15px}
+  .btn-stream{display:block;text-align:center;margin:4px 0}
+  .song-links{display:flex;flex-direction:column}
+}
+</style>
 </head>
 <body>
 <nav>
